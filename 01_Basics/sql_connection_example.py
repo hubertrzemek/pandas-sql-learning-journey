@@ -8,7 +8,8 @@ trusted_connection = 'yes'  # Windows Authentication
 
 # SQL query to execute ----
 query = """
-SELECT TOP 10 ;
+SELECT TOP 10
+FROM TABLE_NAME ;
 """
 
 try:
