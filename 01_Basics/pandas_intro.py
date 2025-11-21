@@ -9,16 +9,16 @@ data = {
 df = pd.DataFrame(data)
 
 # shows the first 5 rows 
-df.head()
+print(df.head())
 # shows info about columns and data types
-df.info()
+print(df.info())
 # statistical summary of numerical columns
-df.describe
+print(df.describe)
 
 
 #access single column
-df["Name"]   
-print(df["Name"]  )
+print(df["Name"])
+
 #access multiple columns
 print (df[["Name", "Age"]])
 
@@ -31,8 +31,7 @@ df["City"] = ["New York", "Los Angeles", "Chicago", "Houston"]
 
 #removing a column
 print(df)
-df = df.drop(columns = ["City"])
-print(df)
+df = df.drop(columns = ["City"])#print(df)
 
 #sorting values 
 sorted_df = df.sort_values(by="Age",ascending=False)
@@ -45,4 +44,4 @@ df.isna()
 df.fillna(value= "Unknown", inplace=False)
 
 # export to CSV
-df.to_csv("output.csv", index=False)
+#df.to_csv("output.csv", index=False)
